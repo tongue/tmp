@@ -1,0 +1,2928 @@
+{
+	"files": [
+		{
+			"name": "paymentservices/models.proto",
+			"description": "This is a description",
+			"package": "paymentservices",
+			"hasEnums": true,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": false,
+			"enums": [
+				{
+					"name": "PaymentMethod",
+					"longName": "PaymentMethod",
+					"fullName": "paymentservices.PaymentMethod",
+					"description": "This is a description",
+					"values": [
+						{
+							"name": "UNSPECIFIED",
+							"number": "0",
+							"description": "This is a description"
+						},
+						{
+							"name": "PPRO_TRUSTLY",
+							"number": "1",
+							"description": "This is a description"
+						},
+						{
+							"name": "PPRO_SOFORT",
+							"number": "2",
+							"description": "This is a description"
+						},
+						{
+							"name": "PPRO_IDEAL",
+							"number": "3",
+							"description": "This is a description"
+						},
+						{
+							"name": "PPRO_BANCONTACT",
+							"number": "4",
+							"description": "This is a description"
+						}
+					]
+				}
+			],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "Error",
+					"longName": "Error",
+					"fullName": "paymentservices.Error",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "code",
+							"description": "This is a description",
+							"label": "",
+							"type": "int32",
+							"longType": "int32",
+							"fullType": "int32",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "message",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Status",
+					"longName": "Status",
+					"fullName": "paymentservices.Status",
+					"description": "This is temp message until there is support in Grpc.Core\r\nhttps://github.com/grpc/grpc-dotnet/issues/303\r\nhttps://cloud.google.com/apis/design/errors#rpc_mapping",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "code",
+							"description": "This corresponds to `google.rpc.Status.code`.",
+							"label": "",
+							"type": "int32",
+							"longType": "int32",
+							"fullType": "int32",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "message",
+							"description": "This corresponds to `google.rpc.Status.message`.",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "details",
+							"description": "This corresponds to `google.rpc.Status.details`.",
+							"label": "repeated",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "ValidationError",
+					"longName": "ValidationError",
+					"fullName": "paymentservices.ValidationError",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "code",
+							"description": "This is a description",
+							"label": "",
+							"type": "int32",
+							"longType": "int32",
+							"fullType": "int32",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "message",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "parameter_name",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": []
+		},
+		{
+			"name": "paymentservices/notification/v1/channels/webhook.proto",
+			"description": "This is a description",
+			"package": "paymentservices.notification.v1.channels.webhook",
+			"hasEnums": false,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": false,
+			"enums": [],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "GetResponseData",
+					"longName": "GetResponseData",
+					"fullName": "paymentservices.notification.v1.channels.webhook.GetResponseData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": []
+		},
+		{
+			"name": "paymentservices/notification/v1/notification_configuration_service.proto",
+			"description": "This is a description",
+			"package": "paymentservices.notification.v1",
+			"hasEnums": false,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": true,
+			"enums": [],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "CreateWebhookConfigurationRequest",
+					"longName": "CreateWebhookConfigurationRequest",
+					"fullName": "paymentservices.notification.v1.CreateWebhookConfigurationRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "request_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "events",
+							"description": "This is a description",
+							"label": "repeated",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "CreateWebhookConfigurationResponse",
+					"longName": "CreateWebhookConfigurationResponse",
+					"fullName": "paymentservices.notification.v1.CreateWebhookConfigurationResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "DeleteConfigurationRequest",
+					"longName": "DeleteConfigurationRequest",
+					"fullName": "paymentservices.notification.v1.DeleteConfigurationRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "DeleteConfigurationResponse",
+					"longName": "DeleteConfigurationResponse",
+					"fullName": "paymentservices.notification.v1.DeleteConfigurationResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetConfigurationRequest",
+					"longName": "GetConfigurationRequest",
+					"fullName": "paymentservices.notification.v1.GetConfigurationRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetConfigurationResponse",
+					"longName": "GetConfigurationResponse",
+					"fullName": "paymentservices.notification.v1.GetConfigurationResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "events",
+							"description": "This is a description",
+							"label": "repeated",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Channel specific information.",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": [
+				{
+					"name": "NotificationConfiguration",
+					"longName": "NotificationConfiguration",
+					"fullName": "paymentservices.notification.v1.NotificationConfiguration",
+					"description": "This is a description",
+					"methods": [
+						{
+							"name": "CreateWebhookConfiguration",
+							"description": "This is a description",
+							"requestType": "CreateWebhookConfigurationRequest",
+							"requestLongType": "CreateWebhookConfigurationRequest",
+							"requestFullType": "paymentservices.notification.v1.CreateWebhookConfigurationRequest",
+							"requestStreaming": false,
+							"responseType": "CreateWebhookConfigurationResponse",
+							"responseLongType": "CreateWebhookConfigurationResponse",
+							"responseFullType": "paymentservices.notification.v1.CreateWebhookConfigurationResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "Get",
+							"description": "This is a description",
+							"requestType": "GetConfigurationRequest",
+							"requestLongType": "GetConfigurationRequest",
+							"requestFullType": "paymentservices.notification.v1.GetConfigurationRequest",
+							"requestStreaming": false,
+							"responseType": "GetConfigurationResponse",
+							"responseLongType": "GetConfigurationResponse",
+							"responseFullType": "paymentservices.notification.v1.GetConfigurationResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "Delete",
+							"description": "This is a description",
+							"requestType": "DeleteConfigurationRequest",
+							"requestLongType": "DeleteConfigurationRequest",
+							"requestFullType": "paymentservices.notification.v1.DeleteConfigurationRequest",
+							"requestStreaming": false,
+							"responseType": "DeleteConfigurationResponse",
+							"responseLongType": "DeleteConfigurationResponse",
+							"responseFullType": "paymentservices.notification.v1.DeleteConfigurationResponse",
+							"responseStreaming": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "paymentservices/onboarding/v1/payment_method_onboarding_service.proto",
+			"description": "This is a description",
+			"package": "paymentservices.onboarding.v1",
+			"hasEnums": true,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": true,
+			"enums": [
+				{
+					"name": "PaymentMethodOnboardingStatus",
+					"longName": "PaymentMethodOnboardingStatus",
+					"fullName": "paymentservices.onboarding.v1.PaymentMethodOnboardingStatus",
+					"description": "This is a description",
+					"values": [
+						{
+							"name": "PENDING",
+							"number": "0",
+							"description": "This is a description"
+						},
+						{
+							"name": "ACTIVATED",
+							"number": "1",
+							"description": "This is a description"
+						},
+						{
+							"name": "NON_COMPLIANT",
+							"number": "2",
+							"description": "This is a description"
+						},
+						{
+							"name": "DEACTIVATED",
+							"number": "3",
+							"description": "This is a description"
+						},
+						{
+							"name": "TERMINATED",
+							"number": "4",
+							"description": "This is a description"
+						}
+					]
+				}
+			],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "GetRequest",
+					"longName": "GetRequest",
+					"fullName": "paymentservices.onboarding.v1.GetRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "payment_method",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentMethod",
+							"longType": "paymentservices.PaymentMethod",
+							"fullType": "paymentservices.PaymentMethod",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetResponse",
+					"longName": "GetResponse",
+					"fullName": "paymentservices.onboarding.v1.GetResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_method_onboarding_status",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentMethodOnboardingStatus",
+							"longType": "PaymentMethodOnboardingStatus",
+							"fullType": "paymentservices.onboarding.v1.PaymentMethodOnboardingStatus",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information.",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "InitializeRequest",
+					"longName": "InitializeRequest",
+					"fullName": "paymentservices.onboarding.v1.InitializeRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "reference",
+							"description": "Regex: ^.{1,36}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "payment_method",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentMethod",
+							"longType": "paymentservices.PaymentMethod",
+							"fullType": "paymentservices.PaymentMethod",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information.",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "InitializeResponse",
+					"longName": "InitializeResponse",
+					"fullName": "paymentservices.onboarding.v1.InitializeResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information.",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "UpdateRequest",
+					"longName": "UpdateRequest",
+					"fullName": "paymentservices.onboarding.v1.UpdateRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "payment_method",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentMethod",
+							"longType": "paymentservices.PaymentMethod",
+							"fullType": "paymentservices.PaymentMethod",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information.",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "UpdateResponse",
+					"longName": "UpdateResponse",
+					"fullName": "paymentservices.onboarding.v1.UpdateResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "data",
+							"description": "Payment method specific information.",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": [
+				{
+					"name": "PaymentMethodOnboarding",
+					"longName": "PaymentMethodOnboarding",
+					"fullName": "paymentservices.onboarding.v1.PaymentMethodOnboarding",
+					"description": "This is a description",
+					"methods": [
+						{
+							"name": "Initialize",
+							"description": "This is a description",
+							"requestType": "InitializeRequest",
+							"requestLongType": "InitializeRequest",
+							"requestFullType": "paymentservices.onboarding.v1.InitializeRequest",
+							"requestStreaming": false,
+							"responseType": "InitializeResponse",
+							"responseLongType": "InitializeResponse",
+							"responseFullType": "paymentservices.onboarding.v1.InitializeResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "Update",
+							"description": "This is a description",
+							"requestType": "UpdateRequest",
+							"requestLongType": "UpdateRequest",
+							"requestFullType": "paymentservices.onboarding.v1.UpdateRequest",
+							"requestStreaming": false,
+							"responseType": "UpdateResponse",
+							"responseLongType": "UpdateResponse",
+							"responseFullType": "paymentservices.onboarding.v1.UpdateResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "Get",
+							"description": "This is a description",
+							"requestType": "GetRequest",
+							"requestLongType": "GetRequest",
+							"requestFullType": "paymentservices.onboarding.v1.GetRequest",
+							"requestStreaming": false,
+							"responseType": "GetResponse",
+							"responseLongType": "GetResponse",
+							"responseFullType": "paymentservices.onboarding.v1.GetResponse",
+							"responseStreaming": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "paymentservices/onboarding/v1/paymentmethods/ppro.proto",
+			"description": "This is a description",
+			"package": "paymentservices.onboarding.v1.paymentmethods.ppro",
+			"hasEnums": false,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": false,
+			"enums": [],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "BusinessDetails",
+					"longName": "BusinessDetails",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.BusinessDetails",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "merchant_category_code",
+							"description": "Format: ISO-18245, eg 4011\r\nRegex: [0-9]{4}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "payment_descriptor",
+							"description": "Regex: [0-9a-zA-Z.%,\u0026amp;/+*${|}- {0,255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "trade_name",
+							"description": "Regex: [^A-Za-z0-9:?/+(),_. -]{0,255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "websites",
+							"description": "Max number of websites: 100",
+							"label": "repeated",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "monthly_transactions",
+							"description": "This is a description",
+							"label": "",
+							"type": "MonthlyTransactions",
+							"longType": "MonthlyTransactions",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.MonthlyTransactions",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "phone_number",
+							"description": "Regex: [+]?[0-9]{8,19}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "email_address",
+							"description": "Regex: [ˆ@ ]+@[ˆ@ ]+\\.[ˆ@ ]+",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "incorporation_date",
+							"description": "This is a description",
+							"label": "",
+							"type": "Timestamp",
+							"longType": "google.protobuf.Timestamp",
+							"fullType": "google.protobuf.Timestamp",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Individual",
+					"longName": "Individual",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.Individual",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "residence",
+							"description": "This is a description",
+							"label": "",
+							"type": "Residence",
+							"longType": "Residence",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "person",
+							"description": "This is a description",
+							"label": "",
+							"type": "Person",
+							"longType": "Person",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "InitializeRequestData",
+					"longName": "InitializeRequestData",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.InitializeRequestData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "business_details",
+							"description": "This is a description",
+							"label": "",
+							"type": "BusinessDetails",
+							"longType": "BusinessDetails",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.BusinessDetails",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "payment_method_information",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentMethodInformation",
+							"longType": "PaymentMethodInformation",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.PaymentMethodInformation",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "legal_entity",
+							"description": "This is a description",
+							"label": "",
+							"type": "LegalEntity",
+							"longType": "LegalEntity",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.LegalEntity",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "LegalEntity",
+					"longName": "LegalEntity",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.LegalEntity",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "partnership",
+							"description": "This is a description",
+							"label": "",
+							"type": "Partnership",
+							"longType": "Partnership",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Partnership",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "individual",
+							"description": "This is a description",
+							"label": "",
+							"type": "Individual",
+							"longType": "Individual",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Individual",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "organization",
+							"description": "This is a description",
+							"label": "",
+							"type": "Organization",
+							"longType": "Organization",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Organization",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "non_profit_organization",
+							"description": "This is a description",
+							"label": "",
+							"type": "NonprofitOrganization",
+							"longType": "NonprofitOrganization",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.NonprofitOrganization",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "MonthlyTransactions",
+					"longName": "MonthlyTransactions",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.MonthlyTransactions",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "count",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "average_value",
+							"description": "Regex: [0-9]+(.[0-9]{1,3})?",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "currency",
+							"description": "Format: ISO-4217 - Alphabetic Currency Code",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Name",
+					"longName": "Name",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.Name",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "title",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "first_name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "middle_name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "last_name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "NonprofitOrganization",
+					"longName": "NonprofitOrganization",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.NonprofitOrganization",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "registration_number",
+							"description": "Regex:[0-9a-zA-Z]{1, 255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "residence",
+							"description": "This is a description",
+							"label": "",
+							"type": "Residence",
+							"longType": "Residence",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "directors",
+							"description": "Max number of directors: 30",
+							"label": "repeated",
+							"type": "Person",
+							"longType": "Person",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "ultimate_beneficial_owners",
+							"description": "Max number of ultimate beneficial ownwers: 30",
+							"label": "repeated",
+							"type": "Person",
+							"longType": "Person",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Organization",
+					"longName": "Organization",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.Organization",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "registration_number",
+							"description": "Regex:[0-9a-zA-Z]{1, 255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "residence",
+							"description": "This is a description",
+							"label": "",
+							"type": "Residence",
+							"longType": "Residence",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "directors",
+							"description": "Max number of directors: 30",
+							"label": "repeated",
+							"type": "Person",
+							"longType": "Person",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "ultimate_beneficial_owners",
+							"description": "Max number of ultimate beneficial ownwers: 30",
+							"label": "repeated",
+							"type": "Person",
+							"longType": "Person",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Partnership",
+					"longName": "Partnership",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.Partnership",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "Regex: ^.{0,255}$",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "registration_number",
+							"description": "Regex: [0-9a-zA-Z]{1, 255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "residence",
+							"description": "This is a description",
+							"label": "",
+							"type": "Residence",
+							"longType": "Residence",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "partners",
+							"description": "Max number of partners: 30",
+							"label": "repeated",
+							"type": "Person",
+							"longType": "Person",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "PaymentMethodInformation",
+					"longName": "PaymentMethodInformation",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.PaymentMethodInformation",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "creditor_residence",
+							"description": "This is a description",
+							"label": "",
+							"type": "Residence",
+							"longType": "Residence",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "creditor_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "creditor_name",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Person",
+					"longName": "Person",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.Person",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "This is a description",
+							"label": "",
+							"type": "Name",
+							"longType": "Name",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Name",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "date_of_birth",
+							"description": "This is a description",
+							"label": "",
+							"type": "Timestamp",
+							"longType": "google.protobuf.Timestamp",
+							"fullType": "google.protobuf.Timestamp",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "residence",
+							"description": "This is a description",
+							"label": "",
+							"type": "Residence",
+							"longType": "Residence",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Residence",
+					"longName": "Residence",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.Residence",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "address",
+							"description": "This is a description",
+							"label": "repeated",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "zip_code",
+							"description": "Regex: [0-9a-zA-Z- ]{1,31}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "city",
+							"description": "Regex: [0-9a-zA-Z- ]{1, 255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "state",
+							"description": "Regex: [0-9a-zA-Z- ]{0, 255}",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "country",
+							"description": "Format: ISO-3166",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "UpdateRequestData",
+					"longName": "UpdateRequestData",
+					"fullName": "paymentservices.onboarding.v1.paymentmethods.ppro.UpdateRequestData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "business_details",
+							"description": "This is a description",
+							"label": "",
+							"type": "BusinessDetails",
+							"longType": "BusinessDetails",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.BusinessDetails",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "legal_entity",
+							"description": "This is a description",
+							"label": "",
+							"type": "LegalEntity",
+							"longType": "LegalEntity",
+							"fullType": "paymentservices.onboarding.v1.paymentmethods.ppro.LegalEntity",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": []
+		},
+		{
+			"name": "paymentservices/processing/v1/models.proto",
+			"description": "This is a description",
+			"package": "paymentservices.processing.v1",
+			"hasEnums": true,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": false,
+			"enums": [
+				{
+					"name": "Operation",
+					"longName": "Operation",
+					"fullName": "paymentservices.processing.v1.Operation",
+					"description": "This is a description",
+					"values": [
+						{
+							"name": "AUTHORIZE",
+							"number": "0",
+							"description": "This is a description"
+						},
+						{
+							"name": "CANCEL",
+							"number": "1",
+							"description": "This is a description"
+						},
+						{
+							"name": "CHARGE",
+							"number": "2",
+							"description": "This is a description"
+						},
+						{
+							"name": "REFUND",
+							"number": "3",
+							"description": "This is a description"
+						}
+					]
+				},
+				{
+					"name": "OperationStatus",
+					"longName": "OperationStatus",
+					"fullName": "paymentservices.processing.v1.OperationStatus",
+					"description": "This is a description",
+					"values": [
+						{
+							"name": "PENDING",
+							"number": "0",
+							"description": "This is a description"
+						},
+						{
+							"name": "COMPLETED",
+							"number": "1",
+							"description": "This is a description"
+						},
+						{
+							"name": "FAILED",
+							"number": "2",
+							"description": "This is a description"
+						}
+					]
+				}
+			],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "OperationError",
+					"longName": "OperationError",
+					"fullName": "paymentservices.processing.v1.OperationError",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "code",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "message",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "OperationSummary",
+					"longName": "OperationSummary",
+					"fullName": "paymentservices.processing.v1.OperationSummary",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "operation",
+							"description": "This is a description",
+							"label": "",
+							"type": "Operation",
+							"longType": "Operation",
+							"fullType": "paymentservices.processing.v1.Operation",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "amount",
+							"description": "This is a description",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "last_updated",
+							"description": "This is a description",
+							"label": "",
+							"type": "Timestamp",
+							"longType": "google.protobuf.Timestamp",
+							"fullType": "google.protobuf.Timestamp",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "reference",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "recon_reference",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "OperationStatus",
+							"longType": "OperationStatus",
+							"fullType": "paymentservices.processing.v1.OperationStatus",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "error",
+							"description": "This is a description",
+							"label": "",
+							"type": "OperationError",
+							"longType": "OperationError",
+							"fullType": "paymentservices.processing.v1.OperationError",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"longName": "Order",
+					"fullName": "paymentservices.processing.v1.Order",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "amount",
+							"description": "Format: ISO-4217, Minor units of currency, e.g. Amount=100, Currency=EUR -\u003e 1.00 EUR",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "currency",
+							"description": "Format: ISO-4217 alpha code, e.g. EUR, USD, GBP",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "reference",
+							"description": "Merchant specific reference, e.g. invoice number",
+							"label": "",
+							"type": "StringValue",
+							"longType": "google.protobuf.StringValue",
+							"fullType": "google.protobuf.StringValue",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": []
+		},
+		{
+			"name": "paymentservices/processing/v1/payment_processing_service.proto",
+			"description": "This is a description",
+			"package": "paymentservices.processing.v1",
+			"hasEnums": false,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": true,
+			"enums": [],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "ChargeRequest",
+					"longName": "ChargeRequest",
+					"fullName": "paymentservices.processing.v1.ChargeRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "configuration_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "request_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "reference",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "payment_method",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentMethod",
+							"longType": "paymentservices.PaymentMethod",
+							"fullType": "paymentservices.PaymentMethod",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "order",
+							"description": "This is a description",
+							"label": "",
+							"type": "Order",
+							"longType": "Order",
+							"fullType": "paymentservices.processing.v1.Order",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "ChargeResponse",
+					"longName": "ChargeResponse",
+					"fullName": "paymentservices.processing.v1.ChargeResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "charge_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetOperationsSummaryRequest",
+					"longName": "GetOperationsSummaryRequest",
+					"fullName": "paymentservices.processing.v1.GetOperationsSummaryRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetOperationsSummaryResponse",
+					"longName": "GetOperationsSummaryResponse",
+					"fullName": "paymentservices.processing.v1.GetOperationsSummaryResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "operations",
+							"description": "This is a description",
+							"label": "repeated",
+							"type": "OperationSummary",
+							"longType": "OperationSummary",
+							"fullType": "paymentservices.processing.v1.OperationSummary",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetSummaryRequest",
+					"longName": "GetSummaryRequest",
+					"fullName": "paymentservices.processing.v1.GetSummaryRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "GetSummaryResponse",
+					"longName": "GetSummaryResponse",
+					"fullName": "paymentservices.processing.v1.GetSummaryResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "authorized_amount",
+							"description": "This is a description",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "charged_amount",
+							"description": "This is a description",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "canceled_amount",
+							"description": "This is a description",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "refunded_amount",
+							"description": "This is a description",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "RefundRequest",
+					"longName": "RefundRequest",
+					"fullName": "paymentservices.processing.v1.RefundRequest",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "request_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "reference",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "amount",
+							"description": "This is a description",
+							"label": "",
+							"type": "int64",
+							"longType": "int64",
+							"fullType": "int64",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "RefundResponse",
+					"longName": "RefundResponse",
+					"fullName": "paymentservices.processing.v1.RefundResponse",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "refund_id",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "data",
+							"description": "Payment method specific information",
+							"label": "",
+							"type": "Any",
+							"longType": "google.protobuf.Any",
+							"fullType": "google.protobuf.Any",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "status",
+							"description": "This is a description",
+							"label": "",
+							"type": "Status",
+							"longType": "paymentservices.Status",
+							"fullType": "paymentservices.Status",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": [
+				{
+					"name": "PaymentProcessing",
+					"longName": "PaymentProcessing",
+					"fullName": "paymentservices.processing.v1.PaymentProcessing",
+					"description": "This is a description",
+					"methods": [
+						{
+							"name": "Charge",
+							"description": "This is a description",
+							"requestType": "ChargeRequest",
+							"requestLongType": "ChargeRequest",
+							"requestFullType": "paymentservices.processing.v1.ChargeRequest",
+							"requestStreaming": false,
+							"responseType": "ChargeResponse",
+							"responseLongType": "ChargeResponse",
+							"responseFullType": "paymentservices.processing.v1.ChargeResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "Refund",
+							"description": "This is a description",
+							"requestType": "RefundRequest",
+							"requestLongType": "RefundRequest",
+							"requestFullType": "paymentservices.processing.v1.RefundRequest",
+							"requestStreaming": false,
+							"responseType": "RefundResponse",
+							"responseLongType": "RefundResponse",
+							"responseFullType": "paymentservices.processing.v1.RefundResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "GetSummary",
+							"description": "This is a description",
+							"requestType": "GetSummaryRequest",
+							"requestLongType": "GetSummaryRequest",
+							"requestFullType": "paymentservices.processing.v1.GetSummaryRequest",
+							"requestStreaming": false,
+							"responseType": "GetSummaryResponse",
+							"responseLongType": "GetSummaryResponse",
+							"responseFullType": "paymentservices.processing.v1.GetSummaryResponse",
+							"responseStreaming": false
+						},
+						{
+							"name": "GetOperationsSummary",
+							"description": "This is a description",
+							"requestType": "GetOperationsSummaryRequest",
+							"requestLongType": "GetOperationsSummaryRequest",
+							"requestFullType": "paymentservices.processing.v1.GetOperationsSummaryRequest",
+							"requestStreaming": false,
+							"responseType": "GetOperationsSummaryResponse",
+							"responseLongType": "GetOperationsSummaryResponse",
+							"responseFullType": "paymentservices.processing.v1.GetOperationsSummaryResponse",
+							"responseStreaming": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "paymentservices/processing/v1/paymentmethods/ppro/sofort.proto",
+			"description": "This is a description",
+			"package": "paymentservices.processing.v1.paymentmethods.ppro.sofort",
+			"hasEnums": false,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": false,
+			"enums": [],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "ChargeRequestData",
+					"longName": "ChargeRequestData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.sofort.ChargeRequestData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_flow_data",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentFlowRedirectRequestData",
+							"longType": "PaymentFlowRedirectRequestData",
+							"fullType": "paymentservices.processing.v1.paymentmethods.ppro.sofort.PaymentFlowRedirectRequestData",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "consumer",
+							"description": "This is a description",
+							"label": "",
+							"type": "Consumer",
+							"longType": "Consumer",
+							"fullType": "paymentservices.processing.v1.paymentmethods.ppro.sofort.Consumer",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "ChargeResponseData",
+					"longName": "ChargeResponseData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.sofort.ChargeResponseData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_flow_data",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentFlowRedirectResponseData",
+							"longType": "PaymentFlowRedirectResponseData",
+							"fullType": "paymentservices.processing.v1.paymentmethods.ppro.sofort.PaymentFlowRedirectResponseData",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Consumer",
+					"longName": "Consumer",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.sofort.Consumer",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "country_code",
+							"description": "Format: ISO 3166-1 alpha-3, e.g. NOR, SWE, DNK",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "PaymentFlowRedirectRequestData",
+					"longName": "PaymentFlowRedirectRequestData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.sofort.PaymentFlowRedirectRequestData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "success_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "failed_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "cancel_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "PaymentFlowRedirectResponseData",
+					"longName": "PaymentFlowRedirectResponseData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.sofort.PaymentFlowRedirectResponseData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "approval_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": []
+		},
+		{
+			"name": "paymentservices/processing/v1/paymentmethods/ppro/trustly.proto",
+			"description": "This is a description",
+			"package": "paymentservices.processing.v1.paymentmethods.ppro.trustly",
+			"hasEnums": false,
+			"hasExtensions": false,
+			"hasMessages": true,
+			"hasServices": false,
+			"enums": [],
+			"extensions": [],
+			"messages": [
+				{
+					"name": "ChargeRequestData",
+					"longName": "ChargeRequestData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.trustly.ChargeRequestData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_flow_data",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentFlowRedirectRequestData",
+							"longType": "PaymentFlowRedirectRequestData",
+							"fullType": "paymentservices.processing.v1.paymentmethods.ppro.trustly.PaymentFlowRedirectRequestData",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "consumer",
+							"description": "This is a description",
+							"label": "",
+							"type": "Consumer",
+							"longType": "Consumer",
+							"fullType": "paymentservices.processing.v1.paymentmethods.ppro.trustly.Consumer",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "ChargeResponseData",
+					"longName": "ChargeResponseData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.trustly.ChargeResponseData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "payment_flow_data",
+							"description": "This is a description",
+							"label": "",
+							"type": "PaymentFlowRedirectResponseData",
+							"longType": "PaymentFlowRedirectResponseData",
+							"fullType": "paymentservices.processing.v1.paymentmethods.ppro.trustly.PaymentFlowRedirectResponseData",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "Consumer",
+					"longName": "Consumer",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.trustly.Consumer",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "name",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "country_code",
+							"description": "Format: ISO 3166-1 alpha-3, e.g. NOR, SWE, DNK",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "reference",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "PaymentFlowRedirectRequestData",
+					"longName": "PaymentFlowRedirectRequestData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.trustly.PaymentFlowRedirectRequestData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "success_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "failed_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						},
+						{
+							"name": "cancel_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"name": "PaymentFlowRedirectResponseData",
+					"longName": "PaymentFlowRedirectResponseData",
+					"fullName": "paymentservices.processing.v1.paymentmethods.ppro.trustly.PaymentFlowRedirectResponseData",
+					"description": "This is a description",
+					"hasExtensions": false,
+					"hasFields": true,
+					"hasOneofs": false,
+					"extensions": [],
+					"fields": [
+						{
+							"name": "approval_url",
+							"description": "This is a description",
+							"label": "",
+							"type": "string",
+							"longType": "string",
+							"fullType": "string",
+							"ismap": false,
+							"isoneof": false,
+							"oneofdecl": "",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"services": []
+		}
+	],
+	"scalarValueTypes": [
+		{
+			"protoType": "double",
+			"notes": "",
+			"cppType": "double",
+			"csType": "double",
+			"goType": "float64",
+			"javaType": "double",
+			"phpType": "float",
+			"pythonType": "float",
+			"rubyType": "Float"
+		},
+		{
+			"protoType": "float",
+			"notes": "",
+			"cppType": "float",
+			"csType": "float",
+			"goType": "float32",
+			"javaType": "float",
+			"phpType": "float",
+			"pythonType": "float",
+			"rubyType": "Float"
+		},
+		{
+			"protoType": "int32",
+			"notes": "Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead.",
+			"cppType": "int32",
+			"csType": "int",
+			"goType": "int32",
+			"javaType": "int",
+			"phpType": "integer",
+			"pythonType": "int",
+			"rubyType": "Bignum or Fixnum (as required)"
+		},
+		{
+			"protoType": "int64",
+			"notes": "Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead.",
+			"cppType": "int64",
+			"csType": "long",
+			"goType": "int64",
+			"javaType": "long",
+			"phpType": "integer/string",
+			"pythonType": "int/long",
+			"rubyType": "Bignum"
+		},
+		{
+			"protoType": "uint32",
+			"notes": "Uses variable-length encoding.",
+			"cppType": "uint32",
+			"csType": "uint",
+			"goType": "uint32",
+			"javaType": "int",
+			"phpType": "integer",
+			"pythonType": "int/long",
+			"rubyType": "Bignum or Fixnum (as required)"
+		},
+		{
+			"protoType": "uint64",
+			"notes": "Uses variable-length encoding.",
+			"cppType": "uint64",
+			"csType": "ulong",
+			"goType": "uint64",
+			"javaType": "long",
+			"phpType": "integer/string",
+			"pythonType": "int/long",
+			"rubyType": "Bignum or Fixnum (as required)"
+		},
+		{
+			"protoType": "sint32",
+			"notes": "Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s.",
+			"cppType": "int32",
+			"csType": "int",
+			"goType": "int32",
+			"javaType": "int",
+			"phpType": "integer",
+			"pythonType": "int",
+			"rubyType": "Bignum or Fixnum (as required)"
+		},
+		{
+			"protoType": "sint64",
+			"notes": "Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s.",
+			"cppType": "int64",
+			"csType": "long",
+			"goType": "int64",
+			"javaType": "long",
+			"phpType": "integer/string",
+			"pythonType": "int/long",
+			"rubyType": "Bignum"
+		},
+		{
+			"protoType": "fixed32",
+			"notes": "Always four bytes. More efficient than uint32 if values are often greater than 2^28.",
+			"cppType": "uint32",
+			"csType": "uint",
+			"goType": "uint32",
+			"javaType": "int",
+			"phpType": "integer",
+			"pythonType": "int",
+			"rubyType": "Bignum or Fixnum (as required)"
+		},
+		{
+			"protoType": "fixed64",
+			"notes": "Always eight bytes. More efficient than uint64 if values are often greater than 2^56.",
+			"cppType": "uint64",
+			"csType": "ulong",
+			"goType": "uint64",
+			"javaType": "long",
+			"phpType": "integer/string",
+			"pythonType": "int/long",
+			"rubyType": "Bignum"
+		},
+		{
+			"protoType": "sfixed32",
+			"notes": "Always four bytes.",
+			"cppType": "int32",
+			"csType": "int",
+			"goType": "int32",
+			"javaType": "int",
+			"phpType": "integer",
+			"pythonType": "int",
+			"rubyType": "Bignum or Fixnum (as required)"
+		},
+		{
+			"protoType": "sfixed64",
+			"notes": "Always eight bytes.",
+			"cppType": "int64",
+			"csType": "long",
+			"goType": "int64",
+			"javaType": "long",
+			"phpType": "integer/string",
+			"pythonType": "int/long",
+			"rubyType": "Bignum"
+		},
+		{
+			"protoType": "bool",
+			"notes": "",
+			"cppType": "bool",
+			"csType": "bool",
+			"goType": "bool",
+			"javaType": "boolean",
+			"phpType": "boolean",
+			"pythonType": "boolean",
+			"rubyType": "TrueClass/FalseClass"
+		},
+		{
+			"protoType": "string",
+			"notes": "A string must always contain UTF-8 encoded or 7-bit ASCII text.",
+			"cppType": "string",
+			"csType": "string",
+			"goType": "string",
+			"javaType": "String",
+			"phpType": "string",
+			"pythonType": "str/unicode",
+			"rubyType": "String (UTF-8)"
+		},
+		{
+			"protoType": "bytes",
+			"notes": "May contain any arbitrary sequence of bytes.",
+			"cppType": "string",
+			"csType": "ByteString",
+			"goType": "[]byte",
+			"javaType": "ByteString",
+			"phpType": "string",
+			"pythonType": "str",
+			"rubyType": "String (ASCII-8BIT)"
+		}
+	]
+}
